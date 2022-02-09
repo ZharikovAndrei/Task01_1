@@ -24,6 +24,8 @@ public class Main {
                 task2.logic();
                 break;
             case 3:
+                Task3 task3 = new Task3();
+                task3.logic();
                 break;
             case 4:
                 break;
