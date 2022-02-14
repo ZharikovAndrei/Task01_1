@@ -11,16 +11,24 @@ public class MergeArrays {
                 }
             } else mergedArray[i] = A[i];
         }*/
+        boolean check = false;
         for (int i = 0; i < A.length + B.length; i++) {
             for (int j = 0; j < A.length; j++, i++) {
                 if (j == k) {
                     for (int y = 0; y < B.length; y++, i++) {
                         mergedArray[i] = B[y];
                     }
+                    i--;
+                    check = true;
                 } else {
-                    mergedArray[i] = A[j];
+                    if(!check) {
+                        mergedArray[i] = A[j];
+                    } else {
+                        mergedArray[i] = A[j - 1];
+                    }
                 }
             }
+            mergedArray[A.length + B.length - 1] = A[A.length - 1];
         }
         return mergedArray;
     }
