@@ -1,4 +1,6 @@
-package com.company.Task1;
+package com.company.task1;
+
+import com.company.view.ViewTask;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,6 +15,6 @@ public class Task1 {
         int sum = calculate.sum(number, 0);
         int sum2 = calculate.sum(number, 99);
         int sum1 = sum - sum2;
-        System.out.println(sum1 == sum2);
+        ViewTask.showResultTask(Boolean.toString(sum1 == sum2));
     }
 }

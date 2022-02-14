@@ -1,4 +1,6 @@
-package com.company.Task3;
+package com.company.task3;
+
+import com.company.view.ViewTask;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,8 +12,8 @@ public class Task3 {
         double a = Double.parseDouble(bf.readLine());
         double b = Double.parseDouble(bf.readLine());
         Perimeter calculatingPerimeter = new Perimeter();
-        System.out.println(calculatingPerimeter.getPerimeter(a, b));
+        ViewTask.showResultTask(String.valueOf(calculatingPerimeter.getPerimeter(a, b)));
         Square calculatingSquare = new Square();
-        System.out.println(calculatingSquare.getSquare(a, b));
+        ViewTask.showResultTask(String.valueOf(calculatingSquare.getSquare(a, b)));
     }
 }
