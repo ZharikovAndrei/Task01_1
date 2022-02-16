@@ -3,6 +3,7 @@ package com.company;
 import com.company.task1.Task1;
 import com.company.task2.Task2;
 import com.company.task3.Task3;
+import com.company.task4.Task4;
 import com.company.task5.Task5;
 import com.company.task6.Task6;
 import com.company.task7.Task7;
@@ -32,6 +33,8 @@ public class Provider {
                 task3.logic();
                 break;
             case 4:
+                Task4 task4 = new Task4();
+                task4.logic();
                 break;
             case 5:
                 Task5 task5 = new Task5();
