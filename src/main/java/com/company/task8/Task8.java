@@ -13,7 +13,7 @@ public class Task8 {
         int K = Integer.parseInt(bf.readLine());
         int N = Integer.parseInt(bf.readLine());
         int[] A = new int[N];
-        for (int i = 0; i < A.length - 1; i++){
+        for (int i = 0; i < A.length; i++){
             A[i] = (int) (Math.random() * 1000) + 1;
         }
         SumOfElements sumOfElements = new SumOfElements();

@@ -5,6 +5,7 @@ import com.company.task2.Task2;
 import com.company.task3.Task3;
 import com.company.task5.Task5;
 import com.company.task6.Task6;
+import com.company.task7.Task7;
 import com.company.task8.Task8;
 import com.company.task9.Task9;
 
@@ -41,6 +42,8 @@ public class Provider {
                 task6.logic();
                 break;
             case 7:
+                Task7 task7 = new Task7();
+                task7.logic();
                 break;
             case 8:
                 Task8 task8 = new Task8();

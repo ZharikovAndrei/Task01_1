@@ -4,31 +4,16 @@ public class MergeArrays {
 
     public int[] getMergeArrays(int[] A, int[] B, int k) {
         int[] mergedArray = new int[A.length + B.length];
-        /*for (int i = 0; i < A.length + B.length; i++) {
+        int p = 0;
+        for (int i = 0; i < A.length + B.length; i++, p++) {
             if (i == k) {
-                for (int j = 0; j < B.length; j++, i++) {
+                for (int j = 0; j < B.length; j++) {
                     mergedArray[i] = B[j];
+                    i++;
                 }
-            } else mergedArray[i] = A[i];
-        }*/
-        boolean check = false;
-        for (int i = 0; i < A.length + B.length; i++) {
-            for (int j = 0; j < A.length; j++, i++) {
-                if (j == k) {
-                    for (int y = 0; y < B.length; y++, i++) {
-                        mergedArray[i] = B[y];
-                    }
-                    i--;
-                    check = true;
-                } else {
-                    if(!check) {
-                        mergedArray[i] = A[j];
-                    } else {
-                        mergedArray[i] = A[j - 1];
-                    }
-                }
+                mergedArray[i] = A[p];
             }
-            mergedArray[A.length + B.length - 1] = A[A.length - 1];
+            mergedArray[i] = A[p];
         }
         return mergedArray;
     }
