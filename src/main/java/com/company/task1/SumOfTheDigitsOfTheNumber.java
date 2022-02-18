@@ -1,8 +1,8 @@
 package com.company.task1;
 
-public class Calculate {
+public class SumOfTheDigitsOfTheNumber {
 
-    public int sum(int number, int range){
+    public int getSumOfTheDigitsOfTheNumber(int number, int range) {
         int sum = 0;
         while (number > range) {
             sum = sum + number % 10;

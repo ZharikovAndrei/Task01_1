@@ -1,14 +1,14 @@
 package com.company;
 
-import com.company.task1.Task1;
-import com.company.task2.Task2;
-import com.company.task3.Task3;
-import com.company.task4.Task4;
-import com.company.task5.Task5;
-import com.company.task6.Task6;
-import com.company.task7.Task7;
-import com.company.task8.Task8;
-import com.company.task9.Task9;
+import com.company.task1.SumOfTheDigitsOfTheNumberTask;
+import com.company.task2.ValueOfTheExpressionTask;
+import com.company.task3.ValuesOfRightTriangleTask;
+import com.company.task4.BelongingOfPointTask;
+import com.company.task5.ExponentiationTask;
+import com.company.task6.SumOfLargestAndSmallestTask;
+import com.company.task7.CalculatingFunctionValuesTask;
+import com.company.task8.SumOfRequiredElementsTask;
+import com.company.task9.MergingArraysTask;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,39 +21,39 @@ public class Provider {
         int choice = Integer.parseInt(bf.readLine());
         switch (choice) {
             case 1:
-                Task1 task1 = new Task1();
+                SumOfTheDigitsOfTheNumberTask task1 = new SumOfTheDigitsOfTheNumberTask();
                 task1.logic();
                 break;
             case 2:
-                Task2 task2 = new Task2();
+                ValueOfTheExpressionTask task2 = new ValueOfTheExpressionTask();
                 task2.logic();
                 break;
             case 3:
-                Task3 task3 = new Task3();
+                ValuesOfRightTriangleTask task3 = new ValuesOfRightTriangleTask();
                 task3.logic();
                 break;
             case 4:
-                Task4 task4 = new Task4();
+                BelongingOfPointTask task4 = new BelongingOfPointTask();
                 task4.logic();
                 break;
             case 5:
-                Task5 task5 = new Task5();
+                ExponentiationTask task5 = new ExponentiationTask();
                 task5.logic();
                 break;
             case 6:
-                Task6 task6 = new Task6();
+                SumOfLargestAndSmallestTask task6 = new SumOfLargestAndSmallestTask();
                 task6.logic();
                 break;
             case 7:
-                Task7 task7 = new Task7();
+                CalculatingFunctionValuesTask task7 = new CalculatingFunctionValuesTask();
                 task7.logic();
                 break;
             case 8:
-                Task8 task8 = new Task8();
+                SumOfRequiredElementsTask task8 = new SumOfRequiredElementsTask();
                 task8.logic();
                 break;
             case 9:
-                Task9 task9 = new Task9();
+                MergingArraysTask task9 = new MergingArraysTask();
                 task9.logic();
                 break;
             case 10:
