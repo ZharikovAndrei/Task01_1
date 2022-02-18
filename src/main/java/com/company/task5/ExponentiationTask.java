@@ -14,6 +14,6 @@ public class ExponentiationTask {
         double secondNumber = Double.parseDouble(bf.readLine());
         double thirdNumber = Double.parseDouble(bf.readLine());
         Exponentiation exponentiation = new Exponentiation();
-        ViewTask.showResultTask(exponentiation.getExponentiation(firstNumber, secondNumber, thirdNumber));
+        ViewTask.showResult(exponentiation.getExponentiation(firstNumber, secondNumber, thirdNumber));
     }
 }

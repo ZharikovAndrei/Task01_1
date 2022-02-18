@@ -14,6 +14,6 @@ public class SumOfLargestAndSmallestTask {
         double secondNumber = Double.parseDouble(bf.readLine());
         double thirdNumber = Double.parseDouble(bf.readLine());
         SumOfLargestAndSmallest sum = new SumOfLargestAndSmallest();
-        ViewTask.showResultTask(String.valueOf(sum.getSumOfLargestAndSmallest(firstNumber, secondNumber, thirdNumber)));
+        ViewTask.showResult(String.valueOf(sum.getSumOfLargestAndSmallest(firstNumber, secondNumber, thirdNumber)));
     }
 }

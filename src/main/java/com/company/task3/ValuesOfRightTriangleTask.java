@@ -12,7 +12,7 @@ public class ValuesOfRightTriangleTask {
         double a = Double.parseDouble(bf.readLine());
         double b = Double.parseDouble(bf.readLine());
         ValuesOfRightTriangle valuesOfRightTriangle = new ValuesOfRightTriangle();
-        ViewTask.showResultTask(String.valueOf(valuesOfRightTriangle.getPerimeter(a, b)));
-        ViewTask.showResultTask(String.valueOf(valuesOfRightTriangle.getSquare(a, b)));
+        ViewTask.showResult(String.valueOf(valuesOfRightTriangle.getPerimeter(a, b)));
+        ViewTask.showResult(String.valueOf(valuesOfRightTriangle.getSquare(a, b)));
     }
 }

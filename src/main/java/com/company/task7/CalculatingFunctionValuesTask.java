@@ -14,8 +14,6 @@ public class CalculatingFunctionValuesTask {
         int b = Integer.parseInt(bf.readLine());
         int h = Integer.parseInt(bf.readLine());
         FunctionValues functionValues = new FunctionValues();
-        for (int x = a; x <= b; x += h) {
-            ViewTask.showResultTask(x + "   " + functionValues.getFunctionValues(h));
-        }
+        ViewTask.showResultOfFunction(functionValues.getFunctionValues(a, b, h), a, b, h);
     }
 }

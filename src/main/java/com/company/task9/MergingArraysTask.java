@@ -1,5 +1,6 @@
 package com.company.task9;
 
+import com.company.data.FillingArray;
 import com.company.view.ViewTask;
 
 import java.io.BufferedReader;
@@ -11,18 +12,13 @@ public class MergingArraysTask {
 
     public void logic() throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int arrayLength = Integer.parseInt(bf.readLine());
-        int N2 = Integer.parseInt(bf.readLine());
+        int[] firstArray = new int[Integer.parseInt(bf.readLine())];
+        int[] secondArray = new int[Integer.parseInt(bf.readLine())];
         int k = Integer.parseInt(bf.readLine());
-        int[] a = new int[arrayLength];
-        int[] b = new int[N2];
-        for (int i = 0; i < a.length; i++) {
-            a[i] = (int) (Math.random() * 10) + 1;
-        }
-        for (int i = 0; i < b.length; i++) {
-            b[i] = (int) (Math.random() * 10) + 1;
-        }
+        FillingArray fillingArray = new FillingArray();
+        fillingArray.getFilledArray(firstArray, 0, 10);
+        fillingArray.getFilledArray(secondArray, -10, 10);
         MergedArrays mergedArrays = new MergedArrays();
-        ViewTask.showResultTask(Arrays.toString(mergedArrays.getMergedArrays(a, b, k)));
+        ViewTask.showResult(Arrays.toString(mergedArrays.getMergedArrays(firstArray, secondArray, k)));
     }
 }

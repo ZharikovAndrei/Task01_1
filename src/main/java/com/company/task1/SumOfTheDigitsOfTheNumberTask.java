@@ -15,6 +15,6 @@ public class SumOfTheDigitsOfTheNumberTask {
         int sumOfAllDigits = sumOfTheDigitsOfTheNumber.getSumOfTheDigitsOfTheNumber(number, 0);
         int sumOfTheLastTwoDigits = sumOfTheDigitsOfTheNumber.getSumOfTheDigitsOfTheNumber(number, 99);
         int sumOfTheFirstTwoDigits = sumOfAllDigits - sumOfTheLastTwoDigits;
-        ViewTask.showResultTask(Boolean.toString(sumOfTheFirstTwoDigits == sumOfTheLastTwoDigits));
+        ViewTask.showResult(Boolean.toString(sumOfTheFirstTwoDigits == sumOfTheLastTwoDigits));
     }
 }

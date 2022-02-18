@@ -14,6 +14,6 @@ public class ValueOfTheExpressionTask {
         double b = Double.parseDouble(bf.readLine());
         double c = Double.parseDouble(bf.readLine());
         ValueOfTheExpression valueOfTheExpression = new ValueOfTheExpression();
-        ViewTask.showResultTask(String.valueOf(valueOfTheExpression.getValueOfTheExpression(a, b, c)));
+        ViewTask.showResult(String.valueOf(valueOfTheExpression.getValueOfTheExpression(a, b, c)));
     }
 }

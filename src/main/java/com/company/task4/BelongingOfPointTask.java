@@ -13,6 +13,6 @@ public class BelongingOfPointTask {
         int x = Integer.parseInt(bf.readLine());
         int y = Integer.parseInt(bf.readLine());
         BelongingOfPoint belongingOfPoint = new BelongingOfPoint();
-        ViewTask.showResultTask(String.valueOf(belongingOfPoint.getBelongingOfPoint(x, y)));
+        ViewTask.showResult(String.valueOf(belongingOfPoint.getBelongingOfPoint(x, y)));
     }
 }
