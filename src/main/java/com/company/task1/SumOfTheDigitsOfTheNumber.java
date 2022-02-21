@@ -1,18 +1,17 @@
 package com.company.task1;
 
+import com.company.util.data.ConsoleDataAcquirer;
 import com.company.util.view.ViewTask;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class SumOfTheDigitsOfTheNumber {
     private static final int firstMagicNumber = 0;
     private static final int secondMagicNumber = 99;
 
     public void logic() throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int number = Integer.parseInt(bf.readLine());
+        ConsoleDataAcquirer consoleDataAcquirer = new ConsoleDataAcquirer();
+        int number = consoleDataAcquirer.getIntegerNumber();
         CalculateSumOfTheDigitsOfTheNumber sumOfTheDigitsOfTheNumber = new CalculateSumOfTheDigitsOfTheNumber();
         int sumOfAllDigits = sumOfTheDigitsOfTheNumber.getSumOfTheDigitsOfTheNumber(number, firstMagicNumber);
         int sumOfTheLastTwoDigits = sumOfTheDigitsOfTheNumber.getSumOfTheDigitsOfTheNumber(number, secondMagicNumber);

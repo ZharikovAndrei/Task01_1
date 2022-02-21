@@ -1,8 +1,8 @@
 package com.company.task9;
 
-public class MergedArrays {
+public class MergingArrays {
 
-    public int[] getMergedArrays(int[] firstArray, int[] secondArray, int k) {
+    public int[] getMergedArray(int[] firstArray, int[] secondArray, int k) {
         int[] mergedArray = new int[firstArray.length + secondArray.length];
         for (int i = 0, p = 0; i < firstArray.length + secondArray.length; i++, p++) {
             if (i == k) {

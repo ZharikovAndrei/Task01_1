@@ -8,7 +8,7 @@ import com.company.task5.Exponentiation;
 import com.company.task6.SumOfLargestAndSmallest;
 import com.company.task7.FunctionValues;
 import com.company.task8.SumOfRequiredElements;
-import com.company.task9.MergingArraysTask;
+import com.company.task9.ArraysToMerge;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -53,7 +53,7 @@ public class Provider {
                 sumOfRequiredElementsTask.logic();
                 break;
             case 9:
-                MergingArraysTask mergingArraysTask = new MergingArraysTask();
+                ArraysToMerge mergingArraysTask = new ArraysToMerge();
                 mergingArraysTask.logic();
                 break;
             case 10:

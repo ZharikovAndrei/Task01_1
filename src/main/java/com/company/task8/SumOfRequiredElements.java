@@ -1,5 +1,6 @@
 package com.company.task8;
 
+import com.company.util.data.ConsoleDataAcquirer;
 import com.company.util.data.FillingArray;
 import com.company.util.view.ViewTask;
 
@@ -10,9 +11,9 @@ import java.io.InputStreamReader;
 public class SumOfRequiredElements {
 
     public void logic() throws IOException {
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int[] a = new int[Integer.parseInt(bf.readLine())];
-        int k = Integer.parseInt(bf.readLine());
+        ConsoleDataAcquirer consoleDataAcquirer = new ConsoleDataAcquirer();
+        int[] a = new int[consoleDataAcquirer.getIntegerNumber()];
+        int k = consoleDataAcquirer.getIntegerNumber();
         FillingArray fillingArray = new FillingArray();
         fillingArray.getFilledArray(a, 0, 100);
         CalculateSumOfRequiredElements sumOfElements = new CalculateSumOfRequiredElements();
