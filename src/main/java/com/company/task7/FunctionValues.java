@@ -1,14 +1,19 @@
 package com.company.task7;
 
-import java.util.Arrays;
+import com.company.util.view.ViewTask;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class FunctionValues {
 
-    public double[] getFunctionValues(int a, int b, int h) {
-        double[] answer = new double[((b - a) / h) + 1];
-        for (int x = a, i = 0; x <= b; x += h, i++) {
-            answer[i] = Math.pow(Math.sin(x), 2) - Math.cos(2 * x);
-        }
-        return answer;
+    public void logic() throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        int a = Integer.parseInt(bf.readLine());
+        int b = Integer.parseInt(bf.readLine());
+        int h = Integer.parseInt(bf.readLine());
+        CalculateFunctionValues functionValues = new CalculateFunctionValues();
+        ViewTask.showResultOfFunction(functionValues.getFunctionValues(a, b, h), a, b, h);
     }
 }

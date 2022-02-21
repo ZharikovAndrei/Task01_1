@@ -1,27 +1,19 @@
 package com.company.task6;
 
+import com.company.util.view.ViewTask;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class SumOfLargestAndSmallest {
 
-    public double getSumOfLargestAndSmallest(double firstNumber, double secondNumber, double thirdNumber) {
-        double smallest;
-        double largest;
-        if (firstNumber > secondNumber) {
-            if (firstNumber > thirdNumber) {
-                largest = firstNumber;
-                smallest = Math.min(secondNumber, thirdNumber);
-            } else {
-                largest = thirdNumber;
-                smallest = Math.min(firstNumber, secondNumber);
-            }
-        } else {
-            if (secondNumber > thirdNumber) {
-                largest = secondNumber;
-                smallest = Math.min(firstNumber, thirdNumber);
-            } else {
-                largest = thirdNumber;
-                smallest = Math.min(firstNumber, secondNumber);
-            }
-        }
-        return largest + smallest;
+    public void logic() throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        double firstNumber = Double.parseDouble(bf.readLine());
+        double secondNumber = Double.parseDouble(bf.readLine());
+        double thirdNumber = Double.parseDouble(bf.readLine());
+        CalculateSumOfLargestAndSmallest sum = new CalculateSumOfLargestAndSmallest();
+        ViewTask.showResult(String.valueOf(sum.getSumOfLargestAndSmallest(firstNumber, secondNumber, thirdNumber)));
     }
 }

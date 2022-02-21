@@ -1,16 +1,19 @@
 package com.company.task5;
 
-import java.util.Arrays;
+import com.company.util.view.ViewTask;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Exponentiation {
-    public String getExponentiation(double... number) {
-        for (int i = 0; i < number.length; i++) {
-            if (number[i] >= 0) {
-                number[i] = Math.pow(number[i], 2);
-            } else {
-                number[i] = Math.pow(number[i], 4);
-            }
-        }
-        return Arrays.toString(number);
+
+    public void logic() throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        double firstNumber = Double.parseDouble(bf.readLine());
+        double secondNumber = Double.parseDouble(bf.readLine());
+        double thirdNumber = Double.parseDouble(bf.readLine());
+        CalculateExponentiation exponentiation = new CalculateExponentiation();
+        ViewTask.showResult(exponentiation.getExponentiation(firstNumber, secondNumber, thirdNumber));
     }
 }

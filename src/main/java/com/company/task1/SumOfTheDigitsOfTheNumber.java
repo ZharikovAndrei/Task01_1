@@ -1,13 +1,22 @@
 package com.company.task1;
 
-public class SumOfTheDigitsOfTheNumber {
+import com.company.util.view.ViewTask;
 
-    public int getSumOfTheDigitsOfTheNumber(int number, int range) {
-        int sum = 0;
-        while (number > range) {
-            sum = sum + number % 10;
-            number = number / 10;
-        }
-        return sum;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class SumOfTheDigitsOfTheNumber {
+    private static final int firstMagicNumber = 0;
+    private static final int secondMagicNumber = 99;
+
+    public void logic() throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        int number = Integer.parseInt(bf.readLine());
+        CalculateSumOfTheDigitsOfTheNumber sumOfTheDigitsOfTheNumber = new CalculateSumOfTheDigitsOfTheNumber();
+        int sumOfAllDigits = sumOfTheDigitsOfTheNumber.getSumOfTheDigitsOfTheNumber(number, firstMagicNumber);
+        int sumOfTheLastTwoDigits = sumOfTheDigitsOfTheNumber.getSumOfTheDigitsOfTheNumber(number, secondMagicNumber);
+        int sumOfTheFirstTwoDigits = sumOfAllDigits - sumOfTheLastTwoDigits;
+        ViewTask.showResult(Boolean.toString(sumOfTheFirstTwoDigits == sumOfTheLastTwoDigits));
     }
 }

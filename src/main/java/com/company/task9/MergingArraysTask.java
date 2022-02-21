@@ -1,7 +1,7 @@
 package com.company.task9;
 
-import com.company.data.FillingArray;
-import com.company.view.ViewTask;
+import com.company.util.data.FillingArray;
+import com.company.util.view.ViewTask;
 
 import java.io.BufferedReader;
 import java.io.IOException;

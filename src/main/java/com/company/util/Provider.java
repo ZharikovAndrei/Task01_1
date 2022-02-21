@@ -1,13 +1,13 @@
 package com.company.util;
 
-import com.company.task1.SumOfTheDigitsOfTheNumberTask;
-import com.company.task2.ValueOfTheExpressionTask;
-import com.company.task3.ValuesOfRightTriangleTask;
-import com.company.task4.BelongingOfPointTask;
-import com.company.task5.ExponentiationTask;
-import com.company.task6.SumOfLargestAndSmallestTask;
-import com.company.task7.CalculatingFunctionValuesTask;
-import com.company.task8.SumOfRequiredElementsTask;
+import com.company.task1.SumOfTheDigitsOfTheNumber;
+import com.company.task2.ValueOfTheExpression;
+import com.company.task3.ValuesOfRightTriangle;
+import com.company.task4.BelongingOfPoint;
+import com.company.task5.Exponentiation;
+import com.company.task6.SumOfLargestAndSmallest;
+import com.company.task7.FunctionValues;
+import com.company.task8.SumOfRequiredElements;
 import com.company.task9.MergingArraysTask;
 
 import java.io.BufferedReader;
@@ -21,35 +21,35 @@ public class Provider {
         int choice = Integer.parseInt(bf.readLine());
         switch (choice) {
             case 1:
-                SumOfTheDigitsOfTheNumberTask sumOfTheDigitsOfTheNumberTask = new SumOfTheDigitsOfTheNumberTask();
+                SumOfTheDigitsOfTheNumber sumOfTheDigitsOfTheNumberTask = new SumOfTheDigitsOfTheNumber();
                 sumOfTheDigitsOfTheNumberTask.logic();
                 break;
             case 2:
-                ValueOfTheExpressionTask valueOfTheExpressionTask = new ValueOfTheExpressionTask();
+                ValueOfTheExpression valueOfTheExpressionTask = new ValueOfTheExpression();
                 valueOfTheExpressionTask.logic();
                 break;
             case 3:
-                ValuesOfRightTriangleTask valuesOfRightTriangleTask = new ValuesOfRightTriangleTask();
+                ValuesOfRightTriangle valuesOfRightTriangleTask = new ValuesOfRightTriangle();
                 valuesOfRightTriangleTask.logic();
                 break;
             case 4:
-                BelongingOfPointTask belongingOfPointTask = new BelongingOfPointTask();
+                BelongingOfPoint belongingOfPointTask = new BelongingOfPoint();
                 belongingOfPointTask.logic();
                 break;
             case 5:
-                ExponentiationTask exponentiationTask = new ExponentiationTask();
+                Exponentiation exponentiationTask = new Exponentiation();
                 exponentiationTask.logic();
                 break;
             case 6:
-                SumOfLargestAndSmallestTask sumOfLargestAndSmallestTask = new SumOfLargestAndSmallestTask();
+                SumOfLargestAndSmallest sumOfLargestAndSmallestTask = new SumOfLargestAndSmallest();
                 sumOfLargestAndSmallestTask.logic();
                 break;
             case 7:
-                CalculatingFunctionValuesTask calculatingFunctionValuesTask = new CalculatingFunctionValuesTask();
+                FunctionValues calculatingFunctionValuesTask = new FunctionValues();
                 calculatingFunctionValuesTask.logic();
                 break;
             case 8:
-                SumOfRequiredElementsTask sumOfRequiredElementsTask = new SumOfRequiredElementsTask();
+                SumOfRequiredElements sumOfRequiredElementsTask = new SumOfRequiredElements();
                 sumOfRequiredElementsTask.logic();
                 break;
             case 9:

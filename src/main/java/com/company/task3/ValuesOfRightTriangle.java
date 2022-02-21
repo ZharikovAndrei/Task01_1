@@ -1,12 +1,18 @@
 package com.company.task3;
 
+import com.company.util.view.ViewTask;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class ValuesOfRightTriangle {
-
-    public double getSquare(double a, double b) {
-        return 0.5 * a * b;
-    }
-
-    public double getPerimeter(double a, double b) {
-        return a + b + Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+    public void logic() throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        double a = Double.parseDouble(bf.readLine());
+        double b = Double.parseDouble(bf.readLine());
+        CalculateValuesOfRightTriangle valuesOfRightTriangle = new CalculateValuesOfRightTriangle();
+        ViewTask.showResult(String.valueOf(valuesOfRightTriangle.getPerimeter(a, b)));
+        ViewTask.showResult(String.valueOf(valuesOfRightTriangle.getSquare(a, b)));
     }
 }

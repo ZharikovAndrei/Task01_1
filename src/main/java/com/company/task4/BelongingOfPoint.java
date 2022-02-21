@@ -1,16 +1,18 @@
 package com.company.task4;
 
+import com.company.util.view.ViewTask;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class BelongingOfPoint {
 
-    public boolean getBelongingOfPoint(int x, int y) {
-        boolean answer = false;
-        if (x < 4 && x > -4) {
-            if (y < 0 && y > -3) {
-                answer = true;
-            } else if (y > 0 && y < 4 && x < 2 && x > -2) {
-                answer = true;
-            }
-        }
-        return answer;
+    public void logic() throws IOException {
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        int x = Integer.parseInt(bf.readLine());
+        int y = Integer.parseInt(bf.readLine());
+        CalculateBelongingOfPoint belongingOfPoint = new CalculateBelongingOfPoint();
+        ViewTask.showResult(String.valueOf(belongingOfPoint.getBelongingOfPoint(x, y)));
     }
 }
